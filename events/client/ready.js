@@ -13,14 +13,14 @@ module.exports = client => {
   }catch{ /* */ }
 
   try{
-    client.user.setActivity("b!help | milrato.eu | " + client.user.username, { type: "PLAYING" });
+    client.user.setActivity("b!help | " + client.user.username, { type: "PLAYING" });
   }catch (e) {
       console.log(String(e.stack).red);
   }
   //Change status each 10 minutes
   setInterval(()=>{
     try{
-      client.user.setActivity("b!help | milrato.eu | " + client.user.username, { type: "PLAYING" });
+      client.user.setActivity("b!help |  " + client.user.username, { type: "PLAYING" });
     }catch (e) {
         console.log(String(e.stack).red);
     }
